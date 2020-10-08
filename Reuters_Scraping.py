@@ -39,3 +39,15 @@ for name in titleList:
     tl=(name.get_text())
     title.append(tl)
 tit = (title)
+
+#URL by removing duplicates
+res = []
+for a in driver.find_elements_by_xpath('.//a'):
+    x = (a.get_attribute('href'))
+    if "/article/idUS" in x:
+        res.append(a.get_attribute('href'))
+link = (res)
+url = [] 
+for i in link: 
+    if i not in url: 
+        url.append(i)
