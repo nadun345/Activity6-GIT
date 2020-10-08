@@ -32,3 +32,10 @@ for name in dateList:
     date.append(dl)
 dat = (date)
 
+#Titles
+title = []     
+titleList = soup.findAll('h3',{'class':'search-result-title'})
+for name in titleList:
+    tl=(name.get_text())
+    title.append(tl)
+tit = (title)
