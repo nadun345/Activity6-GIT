@@ -51,3 +51,5 @@ url = []
 for i in link: 
     if i not in url: 
         url.append(i)
+        
+df = pd.DataFrame(list(zip(dat, tit,url)),columns =['Date', 'Title','Link'], index = None)  
